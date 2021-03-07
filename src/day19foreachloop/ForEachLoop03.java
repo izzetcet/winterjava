@@ -23,7 +23,8 @@ public class ForEachLoop03 {
 		System.out.println("Enter a String to see how many vowels did you use");
 		String str = scan.nextLine().toLowerCase();
 		
-		String ch[] = str.split("");//split() method does not return char because of that we used String as datatype
+		String ch[] = str.split("");//split() method does not return char because of that we used
+									//String as datatype
 		
 		System.out.println(Arrays.toString(ch));
 		
