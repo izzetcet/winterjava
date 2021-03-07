@@ -15,20 +15,24 @@ public class ForEachLoop01 {
 		list1.add(14);
 		System.out.println(list1);
 		
-		//Use "for loop" to print all elements on the console in the same line with a space between the elements
+		//Use "for loop" to print all elements on the console in the same line
+		//with a space between the elements
+		
 		for (int i = 0; i < list1.size(); i++) {
 			System.out.print(list1.get(i) + " ");
 		}
 		
+		
 		System.out.println();
 		
-		//Use "for each loop" to print all elements on the console in the same line with a space between the elements
+		//Use "for each loop" to print all elements on the console in the same line
+		//with a space between the elements
+		
 		for(Integer w : list1) {
 			System.out.print(w + " ");
 		}
-		
+//.............................................................................................		
 		System.out.println();
-		
 		//Use "for-each loop" to print even elements in the list
 		//1. Way
 		for(Integer w : list1) {
@@ -46,10 +50,11 @@ public class ForEachLoop01 {
 			}
 			System.out.print(w + " ");
 		}
-		// AUTOBOXING: int-->Integer :
-		// UNBOXING :  Integer-->int
+		// AUTOBOXING: int-->Integer :primitiveden nonprimitive donusme
+		// UNBOXING :  Integer-->int :non-primitiveden primitive donusme
+
+//.........................................................................................
 		System.out.println();
-		
 		//Use "for-each loop" to print last 3 elements in the list
 		//1.Way
 		for(int w : list1) {
@@ -58,8 +63,8 @@ public class ForEachLoop01 {
 			}
 		}
 		
-		System.out.println();
 		
+		System.out.println();
 		//2.Way
 		for(int w : list1) {
 			if(list1.indexOf(w)<list1.size()-3) {
@@ -68,13 +73,14 @@ public class ForEachLoop01 {
 			System.out.print(w + " ");
 		}
 		
-		System.out.println();
 		
+		System.out.println();
 		//3.Way
 		for(int w : list1.subList(list1.size()-3, list1.size())) {
 			System.out.print(w + " ");
 		}
 
+//.........................................................................................	
 		System.out.println();
 		//Use for-each loop to print first 3 elements in the list
 		//I.WAY
@@ -90,7 +96,7 @@ public class ForEachLoop01 {
 			System.out.print(w + " ");
 		}
 		System.out.println();
-		//3.WAY
+		//III.WAY
 		for (int w : list1) {
 			if(list1.indexOf(w)>2) {
 				break; //takes you outside of the loop
