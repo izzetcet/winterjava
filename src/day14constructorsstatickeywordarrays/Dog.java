@@ -13,7 +13,7 @@ public class Dog {
 	}
 	
 	public void drink() {
-		System.out.println("This is static eat metod");
+		System.out.println("This is static drink metod");
 	}
 	
 	

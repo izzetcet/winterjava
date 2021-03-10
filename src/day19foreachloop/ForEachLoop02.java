@@ -23,7 +23,7 @@ public class ForEachLoop02 {
 		int i = 0;
 		do {
 			System.out.println("Enter a full name");
-			names.add(scan.nextLine());
+			names.add(scan.nextLine().toUpperCase());
 			i++;
 		}while(i<5);
 		
